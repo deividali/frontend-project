@@ -1,4 +1,4 @@
-const APIURL = "http://localhost:5050/coordinate";
+const APIURL = "https://ab62-191-106-210-114.ngrok-free.app/coordinate";
 const zoom=15;
 // Inicializo el mapa en cali
 var map = L.map('map').setView([3.43, -76.51], zoom);

