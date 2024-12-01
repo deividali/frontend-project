@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <title>MotoRide</title>
+</head>
+<body>
+    <header class="panelGrid">
+        <h1 class="titletopPanel">MotoRide</h1>
+        <button class="loginButton"><a href="/frontend/login.html">Logout</a></button>
+    </header>
+    
+    <section class="contentGrid">
+
+        <div class="leftPanel">
+            <div>
+                <h4 class="leftpanelTitle">Filter</h4>
+                <div class="checkList">
+                    <form id="miFormulario"> 
+                        <label><input type="radio" name="radioOption" value="userName"> User Name </label>
+                        <label><input type="radio" name="radioOption" value="motoName"> Bike </label> 
+                        <label><input type="radio" name="radioOption" value="startPoint"> Start Point </label>
+                        <label><input type="radio" name="radioOption" value="endPoint"> End Point </label>  
+                        <!-- <button type="button" onclick="obtenerValorSeleccionado()">Enviar</button> -->
+                    </form>
+                </div>
+            </div>
+                <form class="searchArea">
+                <input type="text" placeholder="Enter Search" class="searchBar" id="searchField">
+                <button type="submit" class="searchButton" id="searchButton">Search</button>
+            </form>
+            <h3 class="leftpanelTitle">Results</h3>
+            <div id="routeList" class="routeClass"></div>
+        </div>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <div class="rideFooter">
+            <center><p>MotoRide - Todos los Derechos Reservados 2024</p></center>
+        </div>
+    </footer>
+    <script src="/frontend/js/index-scripts.js"></script> 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script> 
+    <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.10.0/dist/leaflet-geoman.min.js"></script>
+    <script src="/frontend/js/map.js"></script>
+</body>
+</html>
