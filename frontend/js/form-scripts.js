@@ -15,7 +15,7 @@ document.getElementById('useForm').addEventListener('submit',async(e)=>{
     const email=document.getElementById('email').value;
     const password=document.getElementById('password').value;
     const data={email,password,idElement}
-
+    console.log("Se realiza fetch al servidor...")
     try{
         const response = await fetch('https://ab62-191-106-210-114.ngrok-free.app/form',
             {
