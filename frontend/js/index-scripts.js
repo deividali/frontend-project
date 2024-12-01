@@ -16,7 +16,7 @@ document.getElementById("searchButton").addEventListener('click',async(e)=>{
 
     try {
         // Envio una peticion tipo GET al servidor para obtener los valores de rutas en pantalla acorde a la búsqueda
-        console.log("Envio solicitud al servidor")
+        console.log("Envio solicitud al servidor",`${API_URL}/${searchWord}/${filterOption}`)
         const response = await fetch(`${API_URL}/${searchWord}/${filterOption}`);
         const routes = await response.json();
         renderRoutes(routes);
