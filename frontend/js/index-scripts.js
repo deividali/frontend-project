@@ -1,5 +1,5 @@
 
-const API_URL = "https://4011-191-106-210-114.ngrok-free.app/rutas"
+const API_URL = "https://db4f-191-106-210-114.ngrok-free.app/rutas"
 
 
 document.getElementById("searchButton").addEventListener('click',async(e)=>{
