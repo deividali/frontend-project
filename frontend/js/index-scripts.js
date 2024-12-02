@@ -17,7 +17,10 @@ document.getElementById("searchButton").addEventListener('click',async(e)=>{
     try {
         // Envio una peticion tipo GET al servidor para obtener los valores de rutas en pantalla acorde a la búsqueda
         console.log("Envio solicitud al servidor",`${API_URL}/${searchWord}/${filterOption}`)
-        const response = await fetch(`${API_URL}/${searchWord}/${filterOption}`);
+        const response = await fetch(`${API_URL}/${searchWord}/${filterOption}`,{
+            method: "get",
+            headers: new Headers({"ngrok-skip-browser-warning": "69420"}),
+        });
         //const response = await fetch("https://4011-191-106-210-114.ngrok-free.app/rutas/deividali/userName");
         
         const routes = await response.json();
